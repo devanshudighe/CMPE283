@@ -12,7 +12,7 @@
 
 # Output of all the VM controls:
 
-Output for IA32_VMX_ENTRY_CTLS
+# Output for IA32_VMX_ENTRY_CTLS
 
 [16137.288529] Entry Controls MSR: 0x3ffff000011ff
 [16137.288530]   Load Debug Controls: Can set=Yes, Can clear=No
@@ -30,7 +30,7 @@ Output for IA32_VMX_ENTRY_CTLS
 
 ________________________________________________________________________________
 
-Output for IA32_VMX_EXIT_CTLS
+# Output for IA32_VMX_EXIT_CTLS
 
 [16137.288538] Exit Controls MSR: 0x1ffffff00036dff
 [16137.288539]   Save debug controls: Can set=Yes, Can clear=No
@@ -49,7 +49,7 @@ Output for IA32_VMX_EXIT_CTLS
 
 ________________________________________________________________________________
 
-Output for IA32_VMX_PRIMARY_PROCBASED_CTLS
+# Output for IA32_VMX_PRIMARY_PROCBASED_CTLS
 
 [ 5059.847140] Primary Processor based Controls MSR: 0xfff9fffe0401e172
 [ 5059.847141]   Interrupt-window exiting: Can set=Yes, Can clear=Yes
@@ -76,7 +76,7 @@ Output for IA32_VMX_PRIMARY_PROCBASED_CTLS
 
 _______________________________________________________________________________
 
-Output for IA32_VMX_SECONDARY_PROCBASED_CTLS
+# Output for IA32_VMX_SECONDARY_PROCBASED_CTLS
 
 [ 5059.847155] Secondary Processor based Controls MSR: 0x3cff00000000
 [ 5059.847156]   Virtualize APIC accesses: Can set=Yes, Can clear=Yes
