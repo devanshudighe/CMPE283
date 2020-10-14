@@ -1,5 +1,15 @@
 # CMPE283
 
+# Division of Work:
+
+# 1. Devanshu Dighe :
+
+# 2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334) :
+   Researched and worked on writing the code for executing the Primary VM Based Controls and Secondary VM Based Controls for the Assignment. 
+   Added the corresponding code implementations and their outputs in the cmpe283-1.c and README.md file respectively
+
+# Output of all the VM controls:
+
 Output for IA32_VMX_ENTRY_CTLS
 
 [16137.288529] Entry Controls MSR: 0x3ffff000011ff
