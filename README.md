@@ -1,18 +1,23 @@
 # CMPE283 Assignment 1:
 
 
-# Division of Work:
+## Division of Work:
 
-# 1. Devanshu Dighe :
+###   1. Devanshu Dighe : (Email : devanshu.dighe@sjsu.edu, Student ID: 014608347
+      Modified and added code for VM Entry Controls and VM Exit Controls. 
+      Steps: 1) Loaded the Linux OS from Dual Boot mode.
+             2) Searched the VM Entry Control Fields/VM Exit Control Fields from SDM 24.8.1 and 24.7.1 respectively and added the fields to the code
+             3) Performed the steps required to run and execute the cmpe281-1.c file (make, insmod, dmesg)
+             4) Copied the Output from the terminal to the Readme file.
 
-# 2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334) :
+###   2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334) :
    Researched and worked on writing the code for executing the Primary VM Based Controls and Secondary VM Based Controls for the Assignment. 
    Added the corresponding code implementations and their outputs in the cmpe283-1.c and README.md file respectively
 
 
-# Output of all the VM controls:
+## Output of all the VM controls:
 
-# Output for IA32_VMX_ENTRY_CTLS
+### Output for IA32_VMX_ENTRY_CTLS
 
 [16137.288529] Entry Controls MSR: 0x3ffff000011ff
 [16137.288530]   Load Debug Controls: Can set=Yes, Can clear=No
@@ -30,7 +35,7 @@
 
 ________________________________________________________________________________
 
-# Output for IA32_VMX_EXIT_CTLS
+### Output for IA32_VMX_EXIT_CTLS
 
 [16137.288538] Exit Controls MSR: 0x1ffffff00036dff
 [16137.288539]   Save debug controls: Can set=Yes, Can clear=No
@@ -49,7 +54,7 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________
 
-# Output for IA32_VMX_PRIMARY_PROCBASED_CTLS
+### Output for IA32_VMX_PRIMARY_PROCBASED_CTLS
 
 [ 5059.847140] Primary Processor based Controls MSR: 0xfff9fffe0401e172
 [ 5059.847141]   Interrupt-window exiting: Can set=Yes, Can clear=Yes
@@ -76,7 +81,7 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________
 
-# Output for IA32_VMX_SECONDARY_PROCBASED_CTLS
+### Output for IA32_VMX_SECONDARY_PROCBASED_CTLS
 
 [ 5059.847155] Secondary Processor based Controls MSR: 0x3cff00000000
 [ 5059.847156]   Virtualize APIC accesses: Can set=Yes, Can clear=Yes
