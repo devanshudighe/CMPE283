@@ -10,9 +10,13 @@
              3) Performed the steps required to run and execute the cmpe281-1.c file (make, insmod, dmesg)
              4) Copied the Output from the terminal to the Readme file.
 
-###   2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334) :
+###   2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334)
    Researched and worked on writing the code for executing the Primary VM Based Controls and Secondary VM Based Controls for the Assignment. 
    Added the corresponding code implementations and their outputs in the cmpe283-1.c and README.md file respectively
+   Steps: 1) I used the Linux OS on a dual booted machine to perform the assignment.
+          2) Due to some reason, the Secure Boot feature of my machine was enabled. Hence, I was not able to execute the INSMOD command as despite using the                    super user via sudo, I was getting the message: Operation not permitted. Researched on the issue and disabled the Secure Boot feature by going to                  the Boot Menu.
+          3) Wrote code for the Primary VM Based Controls and Secondary VM Based Controls by referring to Professor's boilerplate code and SDM modules.
+          4) Ran the required commands (make, insmod, dmesg) and committed the required output in the ReadMe.md file.
 
 
 ## Output of all the VM controls:
