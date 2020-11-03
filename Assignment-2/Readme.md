@@ -19,3 +19,9 @@ __Steps__:
 ###   2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334)
    
    
+
+## Questions
+1) Comments on the frequency of exits:
+  - The number of exits do increase after subseuent runs of the CPUID leaf function and at a stable rate.
+2) How many exits?
+  - There are approximately 2.4 million exits in a full VM boot.
