@@ -17,11 +17,18 @@ __Steps__:
              
 
 ###   2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334)
-   
-   
+Worked in tandem with my team member to implement the features required by the assignment. Worked primarily on the cpuid.c and vmx.c to enable the system to respond with the number of exits and cycle times of the exits when the cpuid leaf function is called.
+__Steps__:
+1) Worked on a dual booted machine with Ubuntu 18.04 installed in it.
+2) Referred the assignment to follow the steps required for building the Kernel to the latest version.
+3) Understood where to make code changes required for the assignment from Video 5.
+4) Made changes in the vmx_handle_exit function of the vmx.c file to calculate the number of exits by using the atomic_inc function. Atomic variables were used to make the system concurrent. The atomic variable was initialized in cpuid.c and exported in vmx.c using the export_symbol function. 
+5) Added the leaf function in the cpuid.c file in the kvm_emulate_cpuid function. Stored the number of exits in eax, high 32 bits in ebx and low32 bits in ecx as required by the assignment.
+6) Tested the program by using an inner VM using the virt-manager and qemu. Installed the cpuid package to test the functionality with the command mentioned in the assignment.
+
 
 ## Questions
 1) Comments on the frequency of exits:
-  - The number of exits do increase after subseuent runs of the CPUID leaf function and at a stable rate.
+  - The number of exits do increase after subsequent runs of the CPUID leaf function and at a stable rate.
 2) How many exits?
   - There are approximately 2.4 million exits in a full VM boot.
