@@ -24,7 +24,7 @@ __Steps__:
 3) Understood where to make code changes required for the assignment from Video 5.
 4) Made changes in the vmx_handle_exit function of the vmx.c file to calculate the number of exits by using the atomic_inc function. Atomic variables were used to make the system concurrent. The atomic variable was initialized in cpuid.c and exported in vmx.c using the export_symbol function. 
 5) Added the leaf function in the cpuid.c file in the kvm_emulate_cpuid function. Stored the number of exits in eax, high 32 bits in ebx and low32 bits in ecx as required by the assignment.
-6) Tested the program by using an inner VM using the virt-manager and qemu. Installed the cpuid package to test the functionality with the command mentioned in the assignment.
+6) Tested the program by using an inner VM using the virt-manager and qemu. The nested VM was installed using an ISO file. Installed the cpuid package to test the functionality with the command mentioned in the assignment.
 
 
 ## Questions
