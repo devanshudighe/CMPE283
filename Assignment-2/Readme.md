@@ -32,3 +32,6 @@ __Steps__:
   - The number of exits do increase after subsequent runs of the CPUID leaf function and at a stable rate.
 2) How many exits?
   - There are approximately 2.4 million exits in a full VM boot.
+  
+## Link to linux repo:
+The code was submitted into a forked linux repository as well. Here's a link to the same : https://github.com/devanshudighe/linux
