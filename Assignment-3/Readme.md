@@ -5,14 +5,14 @@
 ## Division of Work:
 
 ###   1. Devanshu Dighe : (Email : devanshu.dighe@sjsu.edu, Student ID: 014608347)
-Collaboratively completed the functionality and code changes in the vmx.c and cpuid.c emulation functions. I worked mainly on the vmx.c file to calculate the number of exits and cycle times of the exits. 
+Collaboratively completed the functionality and code changes in the vmx.c and cpuid.c emulation functions. I worked mainly on the cpuid.c file to calculate the number of exits. 
 
 __Steps__: 
 1) Installed VMware Workstation on my Windows machine and set up an outer VM with Linux OS.
-2) Performed the required steps and commands required to build and update the kernel from the Linux Master branch.
-3) After building the kernel to its latest version, I referred the video lecture 5 to understand where to update the emulation code.
-4) In the vmx.c file under the function vmx_handle_exit, to calculate the cycle time, I looked under SDM and figured out that it can be calculated by using the RDTSC function. So I took 2 variables and declared one at the start of the function from which we will know the start time when the exit happened. We are interested in how many cycles are spent by the cpu when an exit has occured. So we put a time stamp counter after the vmx_handle_exit returns from the cpuid emulation code. That is when we want to end our timer and that is our total time spent for the required exit type.
+2) I referred to the code segment from Assignment-2 to update the emulation code in cpuid.c.
+3) In the vmx.c file under the function vmx_handle_exit, to calculate the number of exits for each exit type, I created a variable which will increment after an exit is encountered. This is an array of size 69 which is the total number of exits defined in the SDM.
 5) This was performed considering a single CPU. To make it thread safe and concurrent on multiple CPU's I added the atomic variables that helps in achieving concurrent values of cycle times on multiple CPUs. 
+6)Created a leaf function 0xFFFFFFE in which my task was to find out the number of exits that are defined in the SDM as well as defined in the KVM under the function kvm_handle_exit. 
 6) Tested the program on an inner VM which was also VMware Workstation. Installed a package called CPUID that helps us testing the functionality using the command **cpuid -l 0x4FFFFFFE -s [exit number]**
              
 
