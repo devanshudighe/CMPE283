@@ -24,17 +24,17 @@ __Steps__:
 2) Referred the assignment to follow the steps required for building the Kernel to the latest version.
 3) Understood where to make code changes required for the assignment from Video 5. (Assignment 2)
 4) Made changes in the vmx_handle_exit function of the vmx.c file to calculate the number of exits by using the atomic_inc function. Atomic variables were used to make the system concurrent. The atomic variable was initialized in cpuid.c and exported in vmx.c using the export_symbol function. 
-5) Added the leaf function 0xFFFFFFE in the cpuid.c file in the kvm_emulate_cpuid function. I wrote the code for setting the register values for the exit types that are not present in SDM and not present in KVM.
+5) Added the leaf function 0x4FFFFFFE in the cpuid.c file in the kvm_emulate_cpuid function. I wrote the code for setting the register values for the exit types that are not present in SDM and not present in KVM.
 6) Ran a for loop to find the number of exits for each exit types.
 6) Tested the program by using an inner VM using the virt-manager and qemu. The nested VM was installed using an ISO file. Installed the cpuid package to test the functionality with the command mentioned in the assignment.
 
 
 ## Questions
-3) Comment on the frequency of exits – does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations? Approximately how many exits does a full VM boot entail?
+1) Comment on the frequency of exits – does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations? Approximately how many exits does a full VM boot entail?
 The number of exits do increase after subsequent runs of the CPUID leaf function and at a stable rate.
 There are approximately 5.6 million exits in a full VM boot.
 
-4) Of the exit types defined in the SDM, which are the most frequent? Least?
+2) Of the exit types defined in the SDM, which are the most frequent? Least?
   - Most Frequent Exit Types : 
     30 (IO Instruction), 28 (Control Register Accesses)
     
