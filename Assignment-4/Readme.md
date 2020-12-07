@@ -21,10 +21,10 @@ __Steps__:
 ## Questions
 2) Include a sample of your print of exit count output from dmesg from “with ept” and “without ept”.
 With EPT
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "With ept")
+![alt text](https://github.com/devanshudighe/CMPE283/tree/main/Assignment-4/With_EPT.png "With ept")
 
 Without EPT
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "without ept")
+![alt text](https://github.com/devanshudighe/CMPE283/tree/main/Assignment-4/Without_EPT.png "without ept")
 
 3) What did you learn from the count of exits? Was the count what you expected? If not, why not?
 4) What changed between the two runs (ept vs no-ept)?
