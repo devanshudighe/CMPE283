@@ -1119,7 +1119,24 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 		if(ecx<0 || ecx>68 || ecx==35 || ecx==38 || ecx==42 || ecx==65) {
 			eax=ebx=ecx=0;
 			edx=0xFFFFFFF;	
-		} 	
+		} else{
+		    /*
+		     * If exit reason present in KVM and SDM
+		     */
+		    if(ecx!=3 && ecx!=4 && ecx!=6 && ecx!=11 && ecx!=16 && ecx!=17 && ecx!=34 && ecx!=36 && ecx!=41 && ecx!=51 && ecx!=63 								&& ecx!=64 && ecx!=66){
+			printk("CPUID(0x4FFFFFFE), exit number %d = %d\n",(int)ecx,atomic_read(&num_exits_per_reason[(int)ecx]));
+			
+			eax=atomic_read(&num_exits_per_reason[(int)ecx]);
+			ebx=0;
+			ecx=0;
+			edx=0;			
+		     } else{
+			/*
+		     	 * If exit reason not present in KVM and SDM
+		     	 */
+			eax=ebx=ecx=edx=0;
+		     }		
+		}	
 	} 
 	else{
 		kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, true);	
