@@ -25,7 +25,7 @@ I researched the behaviour of exits that were happening when EPT was set to 0.
 
 
 2) What did you learn from the count of exits? Was the count what you expected? If not, why not?
-     -- As you can see, the number of exits increases from about 200,000 when EPT is set to 0
+    > As you can see, the number of exits increases from about 200,000 when EPT is set to 0
     
 3) What changed between the two runs (ept vs no-ept)?
   
