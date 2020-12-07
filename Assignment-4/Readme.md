@@ -6,10 +6,7 @@
 ## Division of Work:
 
 ###   1. Devanshu Dighe : (Email : devanshu.dighe@sjsu.edu, Student ID: 014608347)
-Collaboratively completed the functionality and code changes in the vmx.c and cpuid.c emulation functions. I worked mainly on the vmx.c file to calculate the number of exits and cycle times of the exits. 
-
-__Steps__: 
-
+I researched the behaviour of exits that were happening when EPT was not 0. 
              
 
 ###   2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334)
