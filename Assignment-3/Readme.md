@@ -32,8 +32,8 @@ __Steps__:
 ## Questions
 1) Comment on the frequency of exits – does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations? Approximately how many exits does a full VM boot entail?
 
-The number of exits do increase after subsequent runs of the CPUID leaf function and at a stable rate.
-There are approximately 5.6 million exits in a full VM boot.
+  The number of exits do increase after subsequent runs of the CPUID leaf function and at a stable rate.
+  There are approximately 5.6 million exits in a full VM boot.
 
 2) Of the exit types defined in the SDM, which are the most frequent? Least?
   - Most Frequent Exit Types : 
