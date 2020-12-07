@@ -11,8 +11,10 @@ __Steps__:
 1) Installed VMware Workstation on my Windows machine and set up an outer VM with Linux OS.
 2) I referred to the code segment from Assignment-2 to update the emulation code in cpuid.c.
 3) In the vmx.c file under the function vmx_handle_exit, to calculate the number of exits for each exit type, I created a variable which will increment after an exit is encountered. This is an array of size 69 which is the total number of exits defined in the SDM.
-4) This was performed considering a single CPU. To make it thread safe and concurrent on multiple CPU's I added the atomic variables that helps in achieving concurrent values of cycle times on multiple CPUs. 
-5)Created a leaf function 0x4FFFFFFE in which my task was to find out the number of exits that are defined in the SDM as well as defined in the KVM under the function kvm_handle_exit. 
+4) This was performed considering a single CPU. To make it thread safe and concurrent on multiple CPU's I added the atomic variables that helps in achieving concurrent values of cycle times on multiple CPUs.
+
+5)Created a leaf function 0x4FFFFFFE in which my task was to find out the number of exits that are defined in the SDM as well as defined in the KVM under the function kvm_handle_exit.
+
 6) Tested the program on an inner VM which was also VMware Workstation. Installed a package called CPUID that helps us testing the functionality using the command **cpuid -l 0x4FFFFFFE -s [exit number]**
              
 
