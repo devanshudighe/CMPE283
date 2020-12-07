@@ -1,1 +1,33 @@
 
+
+# CMPE283 Assignment 4:
+
+
+## Division of Work:
+
+###   1. Devanshu Dighe : (Email : devanshu.dighe@sjsu.edu, Student ID: 014608347)
+Collaboratively completed the functionality and code changes in the vmx.c and cpuid.c emulation functions. I worked mainly on the vmx.c file to calculate the number of exits and cycle times of the exits. 
+
+__Steps__: 
+
+             
+
+###   2. Sumeet Deshpande (Email: sumeetsuhas.deshpande@sjsu.edu, Student Id: 014608334)
+Worked in tandem with my team member to implement the features required by the assignment. Worked primarily on the cpuid.c and vmx.c to enable the system to respond with the number of exits and cycle times of the exits when the cpuid leaf function is called.
+__Steps__:
+
+
+
+## Questions
+2) Include a sample of your print of exit count output from dmesg from “with ept” and “without ept”.
+With EPT
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "With ept")
+
+Without EPT
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "without ept")
+
+3) What did you learn from the count of exits? Was the count what you expected? If not, why not?
+4) What changed between the two runs (ept vs no-ept)?
+  
+## Link to linux repo:
+The code was submitted into a forked linux repository as well. Here's a link to the same : https://github.com/devanshudighe/linux
